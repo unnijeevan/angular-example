@@ -1,5 +1,14 @@
 <div class="card-columns">
     <ng-container  *ngFor="let product of products">
-        <app-product-list-item [product]="product"></app-product-list-item>
+        <app-product-list-item [product]="product" (addToShoppingList)="addToShoppingList(product)"></app-product-list-item>
     </ng-container>
 </div>
+<ng-container *ngIf="selectedProduct !== undefined">
+    <kj-modal [show]="true" (onclose)="closeModal()" [header]="'Add '+ selectedProduct.name+ ' to shopping list'">
+        <kj-inputbutton placeholder="Created new list" (onsave)="addNewList($event)"></kj-inputbutton>
+        <br>
+        <kj-multiselect [options]="shoppingLists" [displayProperty]="'name'" 
+        (onselect)="updateShoppingList($event)"
+        [selectedOptions]="selectedOptions"></kj-multiselect>
+    </kj-modal>
+</ng-container>

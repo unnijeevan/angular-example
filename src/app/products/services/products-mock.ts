@@ -1,4 +1,4 @@
-import { Product } from '../../models/product';
+import { Product } from 'models/product';
 
 export const mockProducts: Product[] = [
 	{
@@ -10,13 +10,13 @@ export const mockProducts: Product[] = [
 	{
 		id: "2",
 		name: "Chocolate Muffin",
-		price: 4.00,
+		price: 7.00,
 		img: "https://cdn0.woolworths.media/content/wowproductimages/medium/502174.jpg"
 	},
 	{
 		id: "3",
 		name: "Bllueberry Muffin",
-		price: 4.00,
+		price: 9.00,
 		img: "https://cdn0.woolworths.media/content/wowproductimages/medium/502171.jpg"
 	},
 	{
@@ -35,19 +35,19 @@ export const mockProducts: Product[] = [
 	{
 		id: "6",
 		name: "Bread Rolls",
-		price: 4.00,
+		price: 34.00,
 		img: "https://cdn0.woolworths.media/content/wowproductimages/medium/253303.jpg"
 	},
 	{
 		id: "7",
 		name: "Grain & Seed SourDough",
-		price: 4.00,
+		price: 6.00,
 		img: "https://cdn0.woolworths.media/content/wowproductimages/medium/674415.jpg"
 	},
 	{
 		id: "8",
 		name: "Bread Rolls Crumb",
-		price: 4.00,
+		price: 14.00,
 		img: "https://cdn0.woolworths.media/content/wowproductimages/medium/253308.jpg"
 	}
 ];

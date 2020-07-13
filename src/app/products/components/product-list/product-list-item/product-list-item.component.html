@@ -3,6 +3,8 @@
     <div class="card-body">
       <h5 class="card-title">{{product.name}}</h5>
       <p class="card-text">{{product.price | currency:'AUD'}}</p>
+      <button type="button" class="btn btn-primary btn-outline btn-block"> Add to Cart</button>
+      <br>
       <kj-button [header]="'Add to shopping list'" (onclick)="addToList()"></kj-button>
     </div>    
 </div>

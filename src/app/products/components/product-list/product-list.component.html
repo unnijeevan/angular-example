@@ -5,7 +5,7 @@
 </div>
 <ng-container *ngIf="selectedProduct !== undefined">
     <kj-modal [show]="true" (onclose)="closeModal()" [header]="'Add '+ selectedProduct.name+ ' to shopping list'">
-        <kj-inputbutton placeholder="Created new list" (onsave)="addNewList($event)"></kj-inputbutton>
+        <kj-inputbutton placeholder="Create a  new list" (onsave)="addNewList($event)"></kj-inputbutton>
         <br>
         <kj-multiselect [options]="shoppingLists" [displayProperty]="'name'" 
         (onselect)="updateShoppingList($event)"
